@@ -1,10 +1,11 @@
 import React from 'react';
+import img19 from '../images/img-19.jpg';
 
 const Footer = () => {
    return (
       <footer
          className="px-4 min-h-[320px] relative py-7 text-white"
-         style={{ backgroundImage: 'url("src/images/img-19.jpg")' }}
+         style={{ backgroundImage: `url("${img19}` }}
       >
          <div className="absolute inset-0 bg-black/50"></div>
          <div className="relative  flex justify-between flex-col md:flex-row items-center">

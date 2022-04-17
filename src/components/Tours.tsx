@@ -1,31 +1,37 @@
 import React from 'react';
+import img10 from '../images/img-10.jpg';
+import img11 from '../images/img-11.jpg';
+import img12 from '../images/img-12.jpg';
+import img7 from '../images/img-7.jpg';
+import img8 from '../images/img-8.jpg';
+import img9 from '../images/img-9.jpg';
 
 const SLIDES: {
    img: string;
    title: string;
 }[] = [
    {
-      img: 'src/images/img-7.jpg',
+      img: img7,
       title: '2 Ngày 1 đêm',
    },
    {
-      img: 'src/images/img-8.jpg',
+      img: img8,
       title: '2 Ngày 1 đêm',
    },
    {
-      img: 'src/images/img-10.jpg',
+      img: img9,
       title: '2 Ngày 1 đêm',
    },
    {
-      img: 'src/images/img-9.jpg',
+      img: img10,
       title: '2 Ngày 1 đêm',
    },
    {
-      img: 'src/images/img-11.jpg',
+      img: img11,
       title: '2 Ngày 1 đêm',
    },
    {
-      img: 'src/images/img-12.jpg',
+      img: img12,
       title: '2 Ngày 1 đêm',
    },
 ];

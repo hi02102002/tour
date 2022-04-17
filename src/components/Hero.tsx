@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import img2 from '../images/img-2.jpg';
+import img3 from '../images/img-3.jpg';
+import img4 from '../images/img-4.jpg';
+import img5 from '../images/img-5.jpg';
 
-const imgs = [
-   'src/images/img-2.jpg',
-   'src/images/img-3.jpg',
-   'src/images/img-4.jpg',
-   'src/images/img-5.jpg',
-];
+const imgs = [img2, img3, img4, img5];
 
 const Hero = () => {
    const [slide, setSlide] = useState<{

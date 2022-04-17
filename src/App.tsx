@@ -3,22 +3,28 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Library from './components/Library';
 import Tours from './components/Tours';
+import img1 from './images/icon-1.png';
+import img2 from './images/icon-2.png';
+import img3 from './images/icon-3.png';
+import img4 from './images/icon-4.png';
+import img20 from './images/img-20.jpg';
+import img6 from './images/img-6.png';
 
 const LIST_ICON = [
    {
-      icon: 'src/images/icon-1.png',
+      icon: img1,
       name: 'Lưu trú',
    },
    {
-      icon: 'src/images/icon-2.png',
+      icon: img2,
       name: 'Ăn uống',
    },
    {
-      icon: 'src/images/icon-3.png',
+      icon: img3,
       name: 'Các tuyến điểm',
    },
    {
-      icon: 'src/images/icon-4.png',
+      icon: img4,
       name: 'Các lưu ý',
    },
 ];
@@ -46,7 +52,7 @@ function App() {
             <div
                className="py-5"
                style={{
-                  backgroundImage: "url('src/images/img-6.png')",
+                  backgroundImage: `url('${img6}')`,
                }}
             >
                <ul className="grid md:grid-cols-4 grid-cols-2 gap-4 ">
@@ -70,7 +76,7 @@ function App() {
                </ul>
             </div>
             <div
-               style={{ backgroundImage: 'url("src/images/img-20.jpg")' }}
+               style={{ backgroundImage: `url("${img20}")` }}
                className="bg-cover bg-center py-[30px] text-white relative flex flex-col gap-y-[60px]"
             >
                <div className="absolute inset-0 bg-black/80"></div>
