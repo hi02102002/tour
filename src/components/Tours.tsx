@@ -1,11 +1,14 @@
 import React from 'react';
+import { Autoplay, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import img10 from '../images/img-10.jpg';
 import img11 from '../images/img-11.jpg';
 import img12 from '../images/img-12.jpg';
 import img7 from '../images/img-7.jpg';
 import img8 from '../images/img-8.jpg';
 import img9 from '../images/img-9.jpg';
-
 const SLIDES: {
    img: string;
    title: string;
@@ -43,9 +46,37 @@ const Tours = () => {
             Tours
          </h3>
          <div>
-            <ul className="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-6  gap-4 ">
+            <Swiper
+               slidesPerView={1}
+               spaceBetween={16}
+               pagination={{
+                  clickable: true,
+               }}
+               modules={[Pagination, Autoplay]}
+               className="mySwiper pb-10"
+               loop={true}
+               autoplay={{
+                  delay: 1000,
+               }}
+               speed={800}
+               breakpoints={{
+                  320: {
+                     slidesPerView: 2,
+                  },
+                  480: {
+                     slidesPerView: 3,
+                  },
+                  768: {
+                     slidesPerView: 4,
+                  },
+
+                  1024: {
+                     slidesPerView: 6,
+                  },
+               }}
+            >
                {SLIDES.map((slide) => (
-                  <li key={slide.img} className="w-full">
+                  <SwiperSlide key={slide.img} className="w-full">
                      <div className="flex flex-col gap-y-2 items-center bg-white">
                         <div className="relative pb-[100%] w-full rounded overflow-hidden">
                            <div className="absolute inset-0 w-full h-full">
@@ -65,9 +96,9 @@ const Tours = () => {
                            Đặt tour
                         </button>
                      </div>
-                  </li>
+                  </SwiperSlide>
                ))}
-            </ul>
+            </Swiper>
          </div>
       </div>
    );

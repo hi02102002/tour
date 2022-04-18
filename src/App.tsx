@@ -124,7 +124,7 @@ function App() {
                   <div className="px-4 pl-8">
                      <ol className="list-decimal">
                         {RULES.map((rule) => (
-                           <li>{rule}</li>
+                           <li key={rule}>{rule}</li>
                         ))}
                      </ol>
                   </div>
